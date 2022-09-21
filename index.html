@@ -60,7 +60,7 @@
         border: 1px solid red;
     }
 
-    .formContainer input[type=text],
+    .formContainer input[type=text], 
     .formContainer input[type=password] {
         width: 100%;
         padding: 15px;
@@ -76,10 +76,10 @@
     }
 
     .formContainer .btn1 {
-        border: 1px #8ebf42;
+        border: 1px red;
         border-radius: 25px;
-        background-color: #8ebf42;
-        color: #fff;
+        background-color: yellow;
+        color: black;
         position: absolute;
         cursor: pointer;
         opacity: 1;
@@ -96,7 +96,7 @@
         left: 310px;
     }
 
-    .formContainer .btn:hover,
+    .formContainer .btn1:hover,
     .openButton:hover {
         opacity: 1;
     }
@@ -183,20 +183,20 @@
             alert("\nPlease enter a valid email")
             return false;
             // document.getElementsByClassName('formContainer').setAttribute('class','form');
-        } 
+        }else
+            matchpass();
+            return false;
     }
     function matchpass() {
         var passWord = document.getElementById('pswdaw').value;
         var comPass = document.getElementById('confirm').value;
 
-        if (passWord == comPass) {
-            alert("Welcome User!")
-            return true;
-        }
-        else {
+        if ( passWord != comPass){
             alert("password must be the same!");
             return false;
-        }
+        }else
+            alert("Welcome User")
+            return true;
     }  
 </script>
 
