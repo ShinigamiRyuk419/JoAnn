@@ -129,15 +129,15 @@
             <label for="fname">
                 <strong style="color: white; font-size: 14pt;">Firstname</strong>
             </label>
-            <input type="text" id="firstn" placeholder="Your firstname" name="firstname" required>
+            <input type="text" id="firstn" placeholder="Your firstname" name="firstname" required minlength="2" maxlength="25">
             <label for="lname">
                 <strong style="color: white; font-size: 14pt;">Lastname</strong>
             </label>
-            <input type="text" id="lastn" placeholder="Your lastname" name="lastname" required>
+            <input type="text" id="lastn" placeholder="Your lastname" name="lastname" required minlength="2" maxlength="25">
             <label for="email">
                 <strong style="color: white; font-size: 14pt;">E-mail</strong>
             </label>
-            <input type="text" id="emailnasad" placeholder="Your Email" name="email" required>
+            <input type="text" id="emailnasad" placeholder="Your Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
             <label for="psw">
                 <strong style="color: white;font-size: 14pt;">Password</strong>
             </label>
