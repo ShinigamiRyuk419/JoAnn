@@ -33,8 +33,8 @@ if ($pass == $confirm) {
     background-color: rgb(1, 14, 1, 0.8);
     border: 2px;
     border-radius: 20px;
-    box-shadow: 0 15px 15px yellow;
-    border: 1px solid yellow;
+    box-shadow: 0 15px 15px green;
+    border: 1px solid green;
     margin-bottom: 10%;
     margin-top:200px;
     margin-left:20px;'>";
